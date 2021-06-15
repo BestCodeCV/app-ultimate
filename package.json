@@ -4,7 +4,7 @@
   "description": "Server with mysql",
   "main": "app.js",
   "scripts": {
-    "start": "node public/app.js"
+    "start": "node app.js"
   },
   "author": "BestCode",
   "license": "ISC",

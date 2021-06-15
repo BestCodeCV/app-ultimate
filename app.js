@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const port = process.env.PORT || 3000
 
 // settings 
+app.use(express.static('public'))
 app.set('port', port)
 
 //show console get and post
@@ -12,7 +13,7 @@ app.use(morgan('dev'))
 app.use(bodyParser.json())
 
 //routes
-require('./routes/routesServer')(app)
+require('./public/routes/routesServer')(app)
 
 //start
 app.listen(app.get('port'), ()=>{
