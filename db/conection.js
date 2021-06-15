@@ -1,9 +1,9 @@
 let mysql = require('mysql')
 let con = mysql.createConnection({
-    host: 'localhost',
-    user: 'id16513207_user_database',
-    password: 'pAsS_admin_2021',
-    database: 'id16513207_asistente'
+    host: 'bxjlqwmvkpok3owhmaxk-mysql.services.clever-cloud.com',
+    user: 'u7nv995aenag6bhc',
+    password: 'h3wHl6SGBPVuAUAU1JQL',
+    database: 'bxjlqwmvkpok3owhmaxk'
 })
 con.connect()
 module.exports = con;
