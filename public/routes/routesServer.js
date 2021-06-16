@@ -7,6 +7,15 @@ module.exports = app =>{
             res.status(200).json(data)
         })
     })
+    app.get('/comandos/:tipo', (req, res)=>{
+        const comandoData = {
+            tipo :req.params.tipo
+        }
+        comandos.getOneComandos(comandoData, (err, data)=>{
+            if(err) throw err
+            res.json(data)
+        })
+    })
     app.post('/comandos', (req, res)=>{
         const comandoData = {
             id: null,

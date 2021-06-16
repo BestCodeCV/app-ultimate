@@ -15,6 +15,18 @@ comandosModel.getComandos = (callback)=>{
         })
     }
 }
+comandosModel.getOneComandos = (comandoData, callback)=>{
+    const sql = `
+        SELECT * FROM comandos WHERE
+        tipo = ${connection.escape(comandoData.tipo)}
+    `
+    if(connection){
+        connection.query(sql, (err, rows)=>{
+            if(err) throw err
+            callback(null, rows)
+        })
+    }
+}
 comandosModel.insertComando = (comandoData, callback)=>{
     if(connection){
         connection.query('INSERT INTO comandos SET ?', comandoData, (err, rows)=>{
