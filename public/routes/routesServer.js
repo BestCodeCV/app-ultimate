@@ -63,7 +63,7 @@ module.exports = app =>{
     app.delete('/comandos/:id', (req, res)=>{
         comandos.deleteComando(req.params.id, (err, data)=>{
             if(data && data.msg === 'No existe un comando con ese id' || data.msg === 'Eliminado correctamente'){
-                res.json({
+                res.status(200).json({
                     message: 'Comando eliminado correctamente'
                 })
             }else{
