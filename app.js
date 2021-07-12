@@ -18,6 +18,9 @@ app.use(bodyParser.json())
 //routes
 require('./public/routes/routesServer')(app)
 
+app.get('/', (req, res)=>{
+    res.sendFile(__dirname +'/public/views/index.html')
+})
 //start
 app.listen(app.get('port'), ()=>{
     console.log("server on port 3000")

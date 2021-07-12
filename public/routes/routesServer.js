@@ -4,7 +4,7 @@ module.exports = app =>{
     app.get('/comandos', (req, res)=>{
         comandos.getComandos((err, data)=>{
             if(err) throw err
-            res.status(200).json(data)
+            res.status(200).json( data)
         })
     })
     app.get('/comandos/:tipo', (req, res)=>{
@@ -13,7 +13,7 @@ module.exports = app =>{
         }
         comandos.getOneComandos(comandoData, (err, data)=>{
             if(err) throw err
-            res.json(data)
+            res.status(200).json(data)
         })
     })
     app.post('/comandos', (req, res)=>{
@@ -28,15 +28,12 @@ module.exports = app =>{
             if(err) throw err
             if(data && data.insertId){
                 console.log(data)
-                res.json({
-                    success:true,
-                    msg: 'comando insertado',
-                    data: data
+                res.status(200).json({
+                    message: 'Comando ingresado correctamente'
                 })
             }else{
                 res.status(500).json({
-                    success: false,
-                    msg: 'Error'
+                    message: 'Error al registrar comando'
                 })
             }
         })
@@ -53,11 +50,12 @@ module.exports = app =>{
         comandos.updateComando(comandoData, (err, data)=>{
             if(err) throw err
             if(data && data.msg){
-                res.json(data)
+                res.status(200).json({
+                    message : 'Comando actualizado correctamente'
+                })
             }else{
-                res.json({
-                    success: "false",
-                    msg: 'Error'
+                res.status(500).json({
+                    message: 'Error al actualizar comando'
                 })
             }
         })
@@ -66,12 +64,11 @@ module.exports = app =>{
         comandos.deleteComando(req.params.id, (err, data)=>{
             if(data && data.msg === 'No existe un comando con ese id' || data.msg === 'Eliminado correctamente'){
                 res.json({
-                    success: true,
-                    data
+                    message: 'Comando eliminado correctamente'
                 })
             }else{
                 res.status(500).json({
-                    msg: 'Error'
+                    message: 'Error al eliminar comando'
                 })
             }
         })

@@ -2,5 +2,18 @@
   "C_Cpp_Runner.cCompilerPath": "C:\\w64devkit\\bin\\gcc.exe",
   "C_Cpp_Runner.cppCompilerPath": "C:\\w64devkit\\bin\\g++.exe",
   "C_Cpp_Runner.debuggerPath": "C:\\w64devkit\\bin\\gdb.exe",
-  "C_Cpp_Runner.makePath": "C:\\w64devkit\\bin\\make.exe"
+  "C_Cpp_Runner.makePath": "C:\\w64devkit\\bin\\make.exe",
+  "C_Cpp_Runner.warnings": [
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic"
+  ],
+  "C_Cpp_Runner.compilerArgs": [],
+  "C_Cpp_Runner.includePaths": [],
+  "C_Cpp_Runner.linkerArgs": [],
+  "C_Cpp_Runner.cStandard": "",
+  "C_Cpp_Runner.cppStandard": "",
+  "C_Cpp_Runner.excludeSearch": [],
+  "C_Cpp_Runner.enableWarnings": true,
+  "C_Cpp_Runner.warningsAsError": false
 }

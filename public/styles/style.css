@@ -1,0 +1,24 @@
+
+h3{
+    text-align: center;
+}
+.container {
+    display:table;
+  }
+
+.column-1{
+    background:#C8F7C0;
+    display:table-cell;
+    width:33.33vw;
+}
+.column-2{
+    background:#C8F7C0;
+    display:table-cell;
+    width:66.66vw;
+}
+table {
+    width: 100%;
+ }
+ th, td {
+    width: 25%;
+ }
