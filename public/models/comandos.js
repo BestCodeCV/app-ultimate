@@ -12,7 +12,9 @@ comandosModel.getComandos = (callback)=>{
 comandosModel.getOneComandos = (comandoData, callback)=>{
     const sql = `
         SELECT * FROM comandos WHERE
-        tipo = ${connection.escape(comandoData.tipo)}
+        usuario = ${connection.escape(comandoData.account)} OR
+        usuario = 'default0562142' OR
+        usuario IS NULL
     `
     connection.query(sql, (err, rows)=>{
         if(err) throw err

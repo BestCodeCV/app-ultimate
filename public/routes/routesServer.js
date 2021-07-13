@@ -7,9 +7,9 @@ module.exports = app =>{
             res.status(200).json( data)
         })
     })
-    app.get('/comandos/:tipo', (req, res)=>{
+    app.get('/comandos/:account', (req, res)=>{
         const comandoData = {
-            tipo :req.params.tipo
+            account :req.params.account
         }
         comandos.getOneComandos(comandoData, (err, data)=>{
             if(err) throw err
@@ -22,7 +22,8 @@ module.exports = app =>{
             comando: req.body.comando,
             respuesta: req.body.respuesta,
             accion: req.body.accion,
-            tipo: req.body.tipo
+            tipo: req.body.tipo,
+            usuario: req.body.usuario
         }
         comandos.insertComando(comandoData, (err, data)=>{
             if(err) throw err
@@ -41,11 +42,12 @@ module.exports = app =>{
     })
     app.put('/comandos/:id', (req, res)=>{
         const comandoData = {
-            id: req.params.id,
+            id: req.body.id,
             comando: req.body.comando,
             respuesta: req.body.respuesta,
             accion: req.body.accion,
-            tipo: req.body.tipo
+            tipo: req.body.tipo,
+            usuario: req.body.usuario
         }
         comandos.updateComando(comandoData, (err, data)=>{
             if(err) throw err
