@@ -35,7 +35,8 @@ comandosModel.updateComando = ( comandoData, callback)=>{
     comando = ${connection.escape(comandoData.comando)},
     respuesta = ${connection.escape(comandoData.respuesta)},
     accion = ${connection.escape(comandoData.accion)},
-    tipo = ${connection.escape(comandoData.tipo)}
+    tipo = ${connection.escape(comandoData.tipo)},
+    usuario = ${connection.escape(comandoData.usuario)}
     WHERE id = ${connection.escape(comandoData.id)}
     `
     connection.query(sql, (err, result)=>{
