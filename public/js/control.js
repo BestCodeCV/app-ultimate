@@ -1,3 +1,3 @@
-$.get('https://www.forge-db.com/mx/mx4/getGuildPowerChart.php?id=372&server=mx4',function (msg){
+$.get('https://www.forge-db.com/mx/mx3/getPlayers.php',function (msg){
     alert(msg)
 });
