@@ -1,5 +1,8 @@
-var root1 = 'http://localhost:3000/usuarios';
-var root2 = 'http://localhost:3000/edificios';
+//var root1 = 'http://localhost:3000/usuarios';
+//var root2 = 'http://localhost:3000/edificios';
+var root1 = 'https://app-ultimate.herokuapp.com/usuarios';
+var root2 = 'https://app-ultimate.herokuapp.com/edificios';
+
 class Usuario{
     constructor(posicion, avatar, nombre, puntos, batallas, id, avance24){
         this.posicion = posicion
