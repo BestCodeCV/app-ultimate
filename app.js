@@ -1,12 +1,10 @@
 const express = require('express')
-var cors = require('cors')
 const app = express()
-app.use(cors())
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const port = process.env.PORT || 3000
 const path = require('path')
-
+const fs = require('fs')
 // settings 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'))

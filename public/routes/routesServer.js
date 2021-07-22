@@ -1,6 +1,20 @@
 const comandos = require('../models/comandos')
 
 module.exports = app =>{
+    app.get('/usuarios', (req, res)=>{
+        const data = require("../js/datos-gremio.json");
+        if(data!=null) res.status(200).json(data)
+        else res.status(500).json({
+            "msg": "Ningún dato encontrado"
+        })
+    })
+    app.get('/edificios', (req, res)=>{
+        const data = require("../js/datos-ge.json");
+        if(data!=null) res.status(200).json(data)
+        else res.status(500).json({
+            "msg": "Ningún dato encontrado"
+        })
+    })
     app.get('/comandos', (req, res)=>{
         comandos.getComandos((err, data)=>{
             if(err) throw err
