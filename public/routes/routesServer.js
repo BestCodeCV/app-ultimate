@@ -1,6 +1,41 @@
 const comandos = require('../models/comandos')
 
 module.exports = app =>{
+    app.get('/usuarios/byob', (req, res)=>{
+        const data = require("../js/datos-byob.json");
+        if(data!=null) res.status(200).json(data)
+        else res.status(500).json({
+            "msg": "Ningún dato encontrado"
+        })
+    })
+    app.get('/usuarios/leones', (req, res)=>{
+        const data = require("../js/datos-leones.json");
+        if(data!=null) res.status(200).json(data)
+        else res.status(500).json({
+            "msg": "Ningún dato encontrado"
+        })
+    })
+    app.get('/usuarios/praetorians', (req, res)=>{
+        const data = require("../js/datos-praetorians.json");
+        if(data!=null) res.status(200).json(data)
+        else res.status(500).json({
+            "msg": "Ningún dato encontrado"
+        })
+    })
+    app.get('/usuarios/kraken', (req, res)=>{
+        const data = require("../js/datos-kraken.json");
+        if(data!=null) res.status(200).json(data)
+        else res.status(500).json({
+            "msg": "Ningún dato encontrado"
+        })
+    })
+    app.get('/bcg', (req, res)=>{
+        const data = require("../js/temporal.json");
+        if(data!=null) res.status(200).json(data)
+        else res.status(500).json({
+            "msg": "Ningún dato encontrado"
+        })
+    })
     app.get('/usuarios', (req, res)=>{
         const data = require("../js/datos-gremio.json");
         if(data!=null) res.status(200).json(data)

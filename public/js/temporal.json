@@ -1,0 +1,651 @@
+[
+    {
+        "nombre": "D3 XIWAIT",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"biogeochemical_data":78,"microgreen_supplement":99,"cryptocash":323}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"superconductors":1039,"glowing_seaweed":1961}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"translucent_concrete":24,"electromagnets":417,"superconductors":59}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"herbal_snack":2520,"purified_water":480}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"microgreen_supplement":192,"biolight":158,"ai_data":150}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"bionics":2695,"electromagnets":292,"filters":13}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"semiconductors":87,"preservatives":163}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"preservatives":1268,"glowing_seaweed":74,"transester_gas":158}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"filters":4079,"papercrete":2934,"herbal_snack":4987}}
+        }
+    },
+    {
+        "nombre": "D3 VERDEBU",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"sugar_crystals":379,"algae":20,"golden_rice":101}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"algae":603,"artificial_scales":1065,"sugar_crystals":1332}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"dna_data":371,"bionics":58,"lubricants":71}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"filters":1373,"pearls":715,"glowing_seaweed":912}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"herbal_snack":226,"pearls":158,"corals":116}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"biogeochemical_data":1861,"corals":422,"nanowire":717}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"steel":125,"biogeochemical_data":41,"superconductors":84}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"nanoparticles":809,"biogeochemical_data":292,"algae":399}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"nanoparticles":4192,"biogeochemical_data":3757,"algae":4051}}
+        }
+    },
+    {
+        "nombre": "D3 YERAT",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"electromagnets":268,"dna_data":139,"glowing_seaweed":93}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"porcelain":1120,"coffee":1683,"gas":197}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"nanowire":397,"sugar_crystals":30,"smart_materials":73}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"papercrete":79,"nutrition_research":289,"corals":2632}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"plankton":138,"purified_water":355,"sugar_crystals":7}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"smart_materials":1412,"plankton":199,"purified_water":1389}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"superconductors":87,"plankton":148,"algae":15}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"dna_data":1496,"paper_batteries":2,"electromagnets":2}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"paper_batteries":9830,"nanoparticles":2170}}
+        }
+    },
+    {
+        "nombre": "C3 ZEASLO",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"robots":177,"artificial_scales":66,"paper_batteries":257}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"glowing_seaweed":739,"gas":2066,"biotech_crops":195}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"bioplastics":46,"biogeochemical_data":236,"sugar_crystals":218}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"semiconductors":348,"bionics":2171,"nanoparticles":481}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"papercrete":241,"smart_materials":248,"artificial_scales":11}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"fusion_reactors":1612,"nanoparticles":598,"corals":790}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"algae":113,"preservatives":1,"purified_water":136}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"semiconductors":1279,"plastics":169,"soy_proteins":52}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"plastics":1308,"purified_water":7350,"golden_rice":3342}}
+        }
+    },
+    {
+        "nombre": "C2 TAYENCORIA",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"paper_batteries":198,"nanoparticles":232,"artificial_scales":70}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"herbal_snack":783,"plankton":342,"dna_data":1875}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"filters":198,"algae":232,"superconductors":70}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"superconductors":2774,"biolight":226}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"artificial_scales":184,"semiconductors":103,"preservatives":213}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"plankton":1897,"biolight":114,"nutrition_research":989}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"pearls":154,"smart_materials":96}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"robots":437,"lubricants":191,"nanoparticles":872}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"plankton":3764,"data_crystals":1287,"paper":6949}}
+        }
+    },
+    {
+        "nombre": "D2 SLANDMONII",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"renewable_resources":349,"purified_water":109,"glowing_seaweed":42}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"algae":2493,"steel":363,"electromagnets":144}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"soy_proteins":304,"renewable_resources":146,"purified_water":50}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"semiconductors":2416,"nanoparticles":278,"steel":306}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"biolight":363,"smart_materials":137}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"preservatives":562,"bioplastics":2045,"plastics":393}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"herbal_snack":250}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"soy_proteins":637,"plastics":228,"translucent_concrete":635}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"smart_materials":10593,"steel":1407}}
+        }
+    },
+    {
+        "nombre": "D2 TACHMAZER",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"data_crystals":288,"plankton":102,"purified_water":110}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"plastics":681,"ai_data":1677,"bionics":642}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"biolight":454,"fusion_reactors":4,"electromagnets":42}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"semiconductors":1659,"translucent_concrete":1298,"data_crystals":43}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"bioplastics":251,"gas":116,"purified_water":133}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"filters":2055,"artificial_scales":547,"nanoparticles":398}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"paper_batteries":24,"coffee":87,"filters":139}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"superalloys":1198,"semiconductors":97,"bionics":205}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"microgreen_supplement":1957,"plankton":3189,"biogeochemical_data":6854}}
+        }
+    },
+    {
+        "nombre": "D1 BRURAT",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"soy_proteins":89,"transester_gas":392,"artificial_scales":19}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"sugar_crystals":2994,"biolight":1,"filters":5}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"steel":349,"fusion_reactors":95,"purified_water":56}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"tea_silk":1648,"smart_materials":1093,"golden_rice":259}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"robots":80,"pearls":58,"superconductors":362}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"algae":2457,"semiconductors":543}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"superconductors":205,"superalloys":20,"artificial_scales":25}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"filters":424,"biogeochemical_data":754,"bionics":322}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"plankton":6798,"herbal_snack":2695,"smart_materials":2507}}
+        }
+    },
+    {
+        "nombre": "C1 NIALI DIATH",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"plankton":145,"steel":135,"nanoparticles":220}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"data_crystals":1286,"nanoparticles":1714}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"soy_proteins":321,"wire":62,"translucent_concrete":117}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"sugar_crystals":1002,"gas":1767,"renewable_resources":231}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"herbal_snack":63,"superconductors":398,"renewable_resources":39}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"steel":2238,"robots":732,"pearls":30}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"paper":20,"pearls":71,"smart_materials":159}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"plastics":1444,"purified_water":43,"corals":13}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"corals":9932,"superconductors":1619,"plankton":449}}
+        }
+    },
+    {
+        "nombre": "B1 OFRUSREMYR",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"electromagnets":11,"semiconductors":39,"wire":450}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"purified_water":1272,"sugar_crystals":1597,"pearls":131}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"data_crystals":372,"superconductors":91,"biogeochemical_data":37}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"artificial_scales":1861,"semiconductors":344,"superconductors":795}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"semiconductors":202,"corals":121,"dna_data":177}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"renewable_resources":1893,"glowing_seaweed":424,"algae":683}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"bionics":46,"transester_gas":26,"steel":178}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"herbal_snack":744,"nanoparticles":519,"soy_proteins":237}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"bionics":8766,"dna_data":1407,"translucent_concrete":1827}}
+        }
+    },
+    {
+        "nombre": "A1 MATI TUDOKK",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"biogeochemical_data":225,"dna_data":229,"semiconductors":46}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"sugar_crystals":1804,"pearls":944,"renewable_resources":252}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"fusion_reactors":188,"superconductors":152,"nutrition_research":160}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"mars_microbes":905,"biogeochemical_data":491,"soy_proteins":1604}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"herbal_snack":37,"soy_proteins":379,"biolight":84}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"plastics":1120,"purified_water":655,"sugar_crystals":1225}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"dna_data":197,"preservatives":53}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"microgreen_supplement":542,"robots":541,"translucent_concrete":417}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"papercrete":8906,"purified_water":336,"translucent_concrete":2758}}
+        }
+    },
+    {
+        "nombre": "D3 ZYLGIPT",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"purified_water":135,"renewable_resources":223,"data_crystals":142}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"pearls":1751,"translucent_concrete":365,"superconductors":884}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"papercrete":55,"biogeochemical_data":150,"corals":295}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"superconductors":340,"sugar_crystals":1946,"biolight":714}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"steel":236,"robots":264}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"algae":1794,"superconductors":1133,"plastics":73}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"wire":172,"superalloys":8,"superconductors":70}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"superconductors":665,"renewable_resources":740,"nanoparticles":95}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"corals":3460,"plankton":8540}}
+        }
+    },
+    {
+        "nombre": "C3 XISTAN",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"smart_materials":255,"golden_rice":221,"plastics":24}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"bionics":1417,"biogeochemical_data":837,"papercrete":746}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"nanoparticles":223,"filters":39,"nanowire":238}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"tar":1146,"microgreen_supplement":1,"mars_microbes":1853}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"plastics":17,"mars_microbes":82,"translucent_concrete":401}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"renewable_resources":2018,"herbal_snack":390,"biogeochemical_data":592}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"renewable_resources":113,"biogeochemical_data":77,"ai_data":60}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"paper":265,"microgreen_supplement":1235}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"nanoparticles":2226,"renewable_resources":3709,"sugar_crystals":6065
+                }}
+        }
+    },
+    {
+        "nombre": "C2 SHADSTERNING",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"biolight":134,"purified_water":114,"renewable_resources":252}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"corals":563,"translucent_concrete":1856,"bionics":581}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"bionics":181,"ai_data":156,"glowing_seaweed":163}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"renewable_resources":2240,"purified_water":760}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"artificial_scales":291,"semiconductors":73,"superalloys":136}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"nanoparticles":1266,"electromagnets":1734}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"tar":48,"steel":60,"algae":142}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"microgreen_supplement":501,"fusion_reactors":818,"robots":181}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"golden_rice":3030,"artificial_scales":7606,"bionics":1364}}
+        }
+    },
+    {
+        "nombre": "C3 VILIPNE",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"gas":38,"nutrition_research":424,"ai_data":38}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"steel":2229,"nanites":771}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"semiconductors":36,"algae":3,"superconductors":461}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"robots":1542,"superalloys":1458}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"superconductors":226,"translucent_concrete":274}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"nanowire":157,"corals":187,"steel":2656}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"steel":162,"glowing_seaweed":58,"soy_proteins":30}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"preservatives":740,"superalloys":624,"glowing_seaweed":136}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"robots":120,"plankton":5894,"biolight":5986}}
+        }
+    },
+    {
+        "nombre": "B2 TASPAC",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"filters":269,"biogeochemical_data":201,"purified_water":30}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"nanoparticles":2603,"algae":14,"microgreen_supplement":383}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"nanoparticles":57,"nanowire":219,"paper":224}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"nanoparticles":1379,"pearls":817,"herbal_snack":804}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"algae":487,"superconductors":13}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"superconductors":2798,"steel":33,"soy_proteins":169}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"robots":24,"nutrition_research":153,"algae":73}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"semiconductors":212,"renewable_resources":372,"algae":916}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"superconductors":10737,"biogeochemical_data":264,"soy_proteins":999}}
+        }
+    },
+    {
+        "nombre": "B3 ZILSIER",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"gas":170,"algae":330}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"sugar_crystals":146,"pearls":1175,"corals":1679}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"tar":496,"biogeochemical_data":1,"papercrete":3}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"pearls":834,"sugar_crystals":250,"nutrition_research":1916}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"smart_materials":210,"fusion_reactors":139,"pearls":151}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"bioplastics":1377,"ai_data":1328,"renewable_resources":295}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"purified_water":213,"robots":19,"wire":18}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"plankton":667,"gas":317,"filters":516}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"robots":4770,"transester_gas":4182,"ai_data":3048}}
+        }
+    },
+    {
+        "nombre": "B3 YEPADLIC",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"smart_materials":61,"sugar_crystals":242,"semiconductors":197}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"purified_water":2329,"bioplastics":671}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"biotech_crops":478,"glowing_seaweed":22}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"biogeochemical_data":1712,"algae":718,"soy_proteins":570}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"gas":140,"nanowire":32,"paper":328}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"purified_water":2659,"robots":240,"microgreen_supplement":101}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"sugar_crystals":173,"preservatives":77}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"nanites":459,"microgreen_supplement":1039,"algae":2}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"purified_water":4909,"plastics":3803,"data_crystals":3288}}
+        }
+    },
+    {
+        "nombre": "B3 XIDORPOPU",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"purified_water":251,"pearls":62,"algae":187}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"steel":2787,"tea_silk":119,"algae":94}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"superconductors":407,"biogeochemical_data":27,"porcelain":66}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"golden_rice":2293,"plastics":374,"robots":333}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"dna_data":3,"algae":213,"nanites":284}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"bioplastics":1270,"biogeochemical_data":1132,"glowing_seaweed":598}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"papercrete":111,"soy_proteins":83,"translucent_concrete":56}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"superconductors":1191,"smart_materials":132,"bionics":177}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"glowing_seaweed":8602,"gas":1804,"translucent_concrete":1594}}
+        }
+    },
+    {
+        "nombre": "B2 SUBEBLIC",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"renewable_resources":104,"paper_batteries":386,"fusion_reactors":10}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"soy_proteins":2947,"translucent_concrete":52,"smart_materials":1}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"nanoparticles":319,"herbal_snack":181}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"papercrete":2062,"algae":938}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"superconductors":149,"biolight":66,"golden_rice":285}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"filters":1492,"smart_materials":463,"algae":1045}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"ai_data":112,"superconductors":8,"wire":130}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"semiconductors":683,"algae":636,"preservatives":181}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"microgreen_supplement":11601,"purified_water":285,"artificial_scales":114}}
+        }
+    },
+    {
+        "nombre": "B3 VISHRAM",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"gas":188,"filters":1,"pearls":311}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"purified_water":311,"paper":2553,"biotech_crops":136}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"plankton":494,"dna_data":6}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"gas":2861,"biogeochemical_data":1,"artificial_scales":138}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"biogeochemical_data":263,"steel":88,"renewable_resources":149}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"superalloys":117,"algae":672,"robots":2211}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"semiconductors":51,"plankton":68,"biogeochemical_data":131}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"soy_proteins":1479,"purified_water":8,"coffee":13}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"algae":3862,"electromagnets":296,"robots":7842}}
+        }
+    },
+    {
+        "nombre": "A2 TEVOMOSPA",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"semiconductors":47,"tea_silk":423,"artificial_scales":30}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"pearls":1978,"biogeochemical_data":296,"nanoparticles":726}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"plastics":138,"dna_data":327,"superalloys":35}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"plastics":2050,"fusion_reactors":471,"translucent_concrete":479}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"lubricants":74,"dna_data":299,"golden_rice":127}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"electromagnets":2316,"translucent_concrete":284,"nanowire":400}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"wire":88,"nanowire":26,"biolight":136}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"nanoparticles":1174,"coffee":174,"gas":152}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"algae":9169,"fusion_reactors":613,"herbal_snack":2218}}
+        }
+    },
+    {
+        "nombre": "A3 ZAMVA",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"sugar_crystals":447,"biolight":28,"papercrete":25}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"soy_proteins":2201,"herbal_snack":309,"microgreen_supplement":490}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"papercrete":437,"nutrition_research":35,"algae":28}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"semiconductors":1904,"herbal_snack":1046,"nanoparticles":50}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"biotech_crops":463,"papercrete":21,"wire":16}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"algae":1261,"filters":759,"fusion_reactors":980}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"plankton":125,"plastics":70,"artificial_scales":55}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"dna_data":1314,"renewable_resources":179,"corals":7}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"smart_materials":10762,"nanoparticles":1238}}
+        }
+    },
+    {
+        "nombre": "A3 YELIL",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"nanoparticles":34,"algae":206,"artificial_scales":260}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"purified_water":97,"plastics":2163,"translucent_concrete":740}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"purified_water":263,"sugar_crystals":61,"artificial_scales":176}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"algae":1844,"glowing_seaweed":825,"filters":331}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"nanoparticles":22,"superconductors":210,"soy_proteins":268}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"sugar_crystals":668,"preservatives":471,"artificial_scales":1861}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"mars_microbes":34,"glowing_seaweed":149,"pearls":67}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"glowing_seaweed":127,"biogeochemical_data":720,"algae":653}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"nutrition_research":7147,"golden_rice":2990,"dna_data":1863}}
+        }
+    },
+    {
+        "nombre": "A2 SLADISK",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"glowing_seaweed":386,"sugar_crystals":101,"filters":13}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"pearls":1605,"steel":1252,"corals":143}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"algae":379,"soy_proteins":98,"bionics":23}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"renewable_resources":1083,"porcelain":1467,"gas":450}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"superconductors":474,"purified_water":6,"semiconductors":20}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"sugar_crystals":2664,"superconductors":43,"translucent_concrete":293}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"superconductors":59,"transester_gas":163,"biogeochemical_data":28}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"soy_proteins":981,"corals":236,"algae":283}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"paper_batteries":851,"papercrete":2958,"nutrition_research":8191}}
+        }
+    },
+    {
+        "nombre": "A3 VOBOLIZE",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"glowing_seaweed":436,"superconductors":6,"algae":58}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"pearls":244,"biogeochemical_data":647,"biolight":2109}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"dna_data":441,"gas":31,"nanoparticles":28}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"superconductors":452,"soy_proteins":1034,"biolight":1514}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"nutrition_research":3,"superalloys":191,"pearls":306}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"filters":1781,"electromagnets":873,"steel":346}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"ai_data":15,"purified_water":124,"soy_proteins":111}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"superconductors":1084,"dna_data":412,"electromagnets":4}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"glowing_seaweed":4199,"biogeochemical_data":3301,"algae":4500}}
+        }
+    },
+    {
+        "nombre": "A3 XEMGA",
+        "edificios": 
+        {
+            "outpost":{"nombre":"Puesto de avanzada", "bienes":
+                {"paper_batteries":271,"nanowire":147,"superconductors":82}},
+                "fortress":{"nombre":"Fortaleza", "bienes":
+                {"renewable_resources":2983,"gas":17}},
+                "decoys":{"nombre":"Señuelos", "bienes":
+                {"translucent_concrete":29,"cryptocash":452,"biolight":19}},
+                "traps":{"nombre":"Trampas", "bienes":
+                {"renewable_resources":1499,"herbal_snack":1273,"electromagnets":228}},
+                "watchtower":{"nombre":"Torre de Vigilancia", "bienes":
+                {"corals":68,"preservatives":283,"artificial_scales":149}},
+                "siege_camp":{"nombre":"Campos de asedio", "bienes":
+                {"algae":2734,"dna_data":14,"glowing_seaweed":252}},
+                "banner":{"nombre":"Estandarte", "bienes":
+                {"dna_data":207,"biolight":17,"renewable_resources":26}},
+                "statue":{"nombre":"Estatua", "bienes":
+                {"corals":506,"algae":363,"nutrition_research":631}},
+                "palace":{"nombre":"Palacio", "bienes":
+                {"electromagnets":7962,"biotech_crops":430,"biolight":3608}}
+        }
+    }
+]

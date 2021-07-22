@@ -22,6 +22,9 @@ require('./public/routes/routesServer')(app)
 app.get('/', (req, res)=>{
     res.sendFile(__dirname +'/public/views/index.html')
 })
+app.get('/algo', (req, res)=>{
+    res.sendFile(__dirname +'/public/views/bcg.html')
+})
 //start
 app.listen(app.get('port'), ()=>{
     console.log("server on port 3000")

@@ -22,6 +22,8 @@ table {
  }
 .col{
     text-align:center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .single-line {
     width: 100%;
@@ -29,3 +31,20 @@ table {
     overflow: hidden;
     white-space: pre;
   }
+.btn{
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.bot{
+    margin: 20px;
+}
+h4{
+    text-align:center
+}
+.row{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+}
