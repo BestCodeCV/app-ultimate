@@ -1,16 +1,9 @@
-//var root1 = 'http://localhost:3000/usuarios';
-//var root2 = 'http://localhost:3000/edificios';
-//var datosByob = 'http://localhost:3000/usuarios/byob'
-//var datosLeones = 'http://localhost:3000/usuarios/leones'
-//var datosPraetorians = 'http://localhost:3000/usuarios/praetorians'
-//var datosKraken = 'http://localhost:3000/usuarios/kraken'
-
-var root1 = 'https://app-ultimate.herokuapp.com/usuarios';
-var root2 = 'https://app-ultimate.herokuapp.com/edificios';
-var datosByob = 'https://app-ultimate.herokuapp.com/usuarios/byob'
-var datosLeones = 'https://app-ultimate.herokuapp.com/usuarios/leones'
-var datosPraetorians = 'https://app-ultimate.herokuapp.com/usuarios/praetorians'
-var datosKraken = 'https://app-ultimate.herokuapp.com/usuarios/kraken'
+var root1 = '/usuarios';
+var root2 = '/edificios';
+var datosByob = '/usuarios/byob'
+var datosLeones = '/usuarios/leones'
+var datosPraetorians = '/usuarios/praetorians'
+var datosKraken = '/usuarios/kraken'
 class Usuario{
     constructor(posicion, avatar, nombre, puntos, batallas, id, avance24){
         this.posicion = posicion
@@ -221,32 +214,32 @@ function cargarDatos(url){
                 tableBody2 += `<div class="col col-1 single-line">${datos[i].posicion}</div>`;
                 if(datos[i].avance24>0) tableBody2 += `<div class="col col-2 single-line">${datos[i].nombre}</div>`;
                 else tableBody2 += `<div class="col col-2 single-line bg-danger text-white">${datos[i].nombre}</div>`;
-                tableBody2 += `<div class="col col-1.5 single-line">${datos[i].batallas}</div>`;
+                tableBody2 += `<div class="col col-1 single-line">${datos[i].batallas}</div>`;
                 tableBody2 += `<div class="col col-2 single-line">${datos[i].puntos}</div>`;
                 if(edificio1!=null && typeof edificio1 != 'undefined'){
                     cOb+=1
                     total+=bienesObs(edificio1.nivel)
-                    tableBody2 += `<div class="col col-1.2 single-line">${edificio1.nivel}</div>`;
+                    tableBody2 += `<div class="col col-1 single-line">${edificio1.nivel}</div>`;
                 }
-                else tableBody2 += `<div class="col col-1.2 mb-0 single-line bg-danger text-white">NO</div>`;
+                else tableBody2 += `<div class="col col-1 mb-0 single-line bg-danger text-white">NO</div>`;
                 if(edificio2!=null && typeof edificio2 != 'undefined'){
                     cAr+=1
                     total+=bienesArca(edificio2.nivel)
-                    tableBody2 += `<div class="col col-1.2 single-line">${edificio2.nivel}</div>`;
+                    tableBody2 += `<div class="col col-1 single-line">${edificio2.nivel}</div>`;
                 }
-                else tableBody2 += `<div class="col col-1.2 single-line bg-danger text-white">NO</div>`;
+                else tableBody2 += `<div class="col col-1 single-line bg-danger text-white">NO</div>`;
                 if(edificio3!=null && typeof edificio3 != 'undefined'){
                     cMi+=1
                     total+=bienesMirador(edificio3.nivel)
-                    tableBody2 += `<div class="col col-1.2 single-line">${edificio3.nivel}</div>`;
+                    tableBody2 += `<div class="col col-1 single-line">${edificio3.nivel}</div>`;
                 } 
-                else tableBody2 += `<div class="col col-1.2 single-line bg-danger text-white">NO</div>`;
+                else tableBody2 += `<div class="col col-1 single-line bg-danger text-white">NO</div>`;
                 if(edificio4!=null && typeof edificio4 != 'undefined'){
                     cAl+=1
-                    tableBody2 += `<div class="col col-1.2 single-line">${edificio4.nivel}</div>`;
+                    tableBody2 += `<div class="col col-1 single-line">${edificio4.nivel}</div>`;
                 }
-                else tableBody2 += `<div class="col col-1.2 single-line bg-danger text-white">NO</div>`;
-                tableBody2 += `<div class="col col-1.7 single-line">${total}</div>`;
+                else tableBody2 += `<div class="col col-1 single-line bg-danger text-white">NO</div>`;
+                tableBody2 += `<div class="col col-2 single-line">${total}</div>`;
                 tableBody2 += `</div>`;
                 cB+=total
                 if(datos[i].avance24>0) activos+=1

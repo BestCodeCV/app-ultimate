@@ -3,10 +3,22 @@
         "nombre": "D3 XIWAIT",
         "edificios": 
         {
-            "outpost":{"nombre":"Puesto de avanzada", "bienes":
-                {"biogeochemical_data":78,"microgreen_supplement":99,"cryptocash":323}},
-                "fortress":{"nombre":"Fortaleza", "bienes":
-                {"superconductors":1039,"glowing_seaweed":1961}},
+                "outpost":
+                {
+                    "nombre":"Puesto de avanzada", 
+                    "bienes":
+                    {
+                    "biogeochemical_data":78,"microgreen_supplement":99,"cryptocash":323
+                    }
+                },
+                "fortress":
+                {
+                    "nombre":"Fortaleza", 
+                    "bienes":
+                    {
+                        "superconductors":1039,"glowing_seaweed":1961
+                    }
+                },
                 "decoys":{"nombre":"Señuelos", "bienes":
                 {"translucent_concrete":24,"electromagnets":417,"superconductors":59}},
                 "traps":{"nombre":"Trampas", "bienes":
