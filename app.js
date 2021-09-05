@@ -36,10 +36,13 @@ app.get('/anterior', (req, res)=>{
     res.sendFile(__dirname +'/public/views/index.html')
 })
 app.get('/', (req, res)=>{
-    res.sendFile(__dirname +'/public/views/index.html')
+    res.sendFile(__dirname +'/public/views/index3.html')
 })
 app.get('/actual', (req, res)=>{
     res.sendFile(__dirname +'/public/views/index2.html')
+})
+app.get('/actual2', (req, res)=>{
+    res.sendFile(__dirname +'/public/views/index3.html')
 })
 app.get('/bienes', (req, res)=>{
     res.sendFile(__dirname +'/public/views/bienes.html')
