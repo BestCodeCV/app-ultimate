@@ -32,23 +32,24 @@ app.get('/main', (req, res)=>{
 
 
 
-app.get('/anterior', (req, res)=>{
+app.get('/bcg-07-21', (req, res)=>{
     res.sendFile(__dirname +'/public/views/index.html')
 })
 app.get('/', (req, res)=>{
     res.sendFile(__dirname +'/public/views/index3.html')
 })
-app.get('/actual', (req, res)=>{
+app.get('/bcg-08-21', (req, res)=>{
     res.sendFile(__dirname +'/public/views/index2.html')
 })
-app.get('/actual2', (req, res)=>{
+app.get('/bcg-actual', (req, res)=>{
     res.sendFile(__dirname +'/public/views/index3.html')
 })
 app.get('/bienes', (req, res)=>{
     res.sendFile(__dirname +'/public/views/bienes.html')
 })
-
-
+app.get('/search/*', (req, res)=>{
+    res.sendFile(__dirname +'/public/views/search.html')
+})
 
 
 app.get('/one-piece', (req, res)=>{
