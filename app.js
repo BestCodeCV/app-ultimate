@@ -15,7 +15,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(fileUpload())
 app.set('port', port)
 
-
+class User{
+    constructor(id, clan){
+        this.id = id;
+        this.clan = clan;
+    }
+}
+let user = new User(0, 0)
 //show console get and post
 app.use(morgan('dev'))
 app.use(bodyParser.json())
@@ -26,8 +32,26 @@ require('./public/routes/routesServer')(app)
 app.get('/algo', (req, res)=>{
     res.sendFile(__dirname +'/public/views/bcg.html')
 })
-app.get('/main', (req, res)=>{
-    res.sendFile(__dirname +'/public/views/main.html')
+app.get('/userid=*', (req, res)=>{
+    res.sendFile(__dirname +'/public/views/detail.html')
+})
+app.post('/userdata', (req, res)=>{
+    user = new User(req.body.id, req.body.clan)
+    if(req.body.id!='undefined' && req.body.id!=''){
+        res.json({status : 200, id : req.body.id})
+    }else{
+        res.json({status : 500, id :req.body.id})
+    }
+})
+app.get('/modeluser', (req, res)=>{
+    let data = {
+        id : user.id,
+        clan : user.clan
+    }
+    if(data!=null) res.status(200).json(data)
+    else res.status(500).json({
+        "msg": "Ningún dato encontrado"
+    })
 })
 
 
@@ -35,9 +59,18 @@ app.get('/main', (req, res)=>{
 app.get('/bcg-07-21', (req, res)=>{
     res.sendFile(__dirname +'/public/views/index.html')
 })
+//app.get('/', (req, res)=>{
+//    res.sendFile(__dirname +'/public/views/index3.html')
+//})
 app.get('/', (req, res)=>{
-    res.sendFile(__dirname +'/public/views/index3.html')
+    res.sendFile(__dirname +'/public/views/home.html')
 })
+app.get('/bcg', (req, res)=>{
+    res.sendFile(__dirname +'/public/views/bdg.html')
+})
+//app.get('/', (req, res)=>{
+//    res.sendFile(__dirname +'/public/views/codes.html')
+//})
 app.get('/bcg-08-21', (req, res)=>{
     res.sendFile(__dirname +'/public/views/index2.html')
 })

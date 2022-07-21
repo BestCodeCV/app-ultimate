@@ -3,6 +3,7 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
         <script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script type="module" src="../models/Guild.js"></script>
         <link rel="stylesheet" href="../styles/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="bcg-actual">BCG actual</a>
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="bcg-08-21">BCG 08/21</a>
@@ -32,38 +33,38 @@
               <a class="nav-link" href="bcg-07-21">BCG 07/21</a>
             </li>
           </ul>
-          
       </div>
     </nav>
-
-        <div class="container shadow-lg pb-3 mb-5 bg-body rounded" style="margin-top: 120px;">
-            <div class="h4">
-                <h4 id="nombreUser">SU NOMBRE</h4>
+    
+    <div class="container shadow-lg pb-3 mb-1 bg-body rounded" style="margin-top: 120px;">
+        <div class="text-center h6 mt-3">Ultima actualización 20/07/22 19:00</div>
+            <div class="h1 text-center">
+                <h1 id="nombreClan">************</h1>
+            </div>
+            <div id="resumen" class="container" style ="padding: 15px;">
+                <div>Descripción:</div>
+                <div>Total de miembros: </div>
+                <div>Nivel del Gremio:</div>
+                <div># Activos ultimas 24hrs: </div>
+                <div># Inactivos ultimas 24hrs: </div>
             </div>
         </div>
         
-        <div class="container shadow-lg pb-3 mb-5 bg-body rounded">
-          <div class="row">
-            <div class="col col-1 single-line">Pos</div>
-            <div class="col col-2 single-line">Nombre</div>
-            <div class="col col-1 single-line">Peleas</div>
-            <div class="col col-2 single-line">Puntos</div>
-            <div class="col col-1 single-line">Obs.</div>
-            <div class="col col-1 single-line">Arca</div>
-            <div class="col col-1 single-line">Mirador</div>
-            <div class="col col-1 single-line">Alcatraz</div>
-            <div class="col col-2 single-line">Bienes xdía</div>
-          </div>
-          <div id="container">
-
-          </div>
+        <div class="container shadow-lg pb-3 mb-5 mt-4 bg-body rounded">
+            <div class="row">
+              <div class="col col-2 single-line h4 mt-1">Fecha</div>
+              <div class="col col-3 single-line h4 mt-1">Peleas</div>
+              <div class="col col-4 single-line h4 mt-1">Puntos</div>
+              <div class="col col-3 single-line h4 mt-1">Era</div>
+            </div>
+            <div id="dataContainer"></div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js" type="text/javascript"></script>        
-        <script src="../js/search.js" type="text/javascript"></script>
+        <script src="../scripts/detail.js" type="module"></script>
         <script src="../js/navigation.js" type="text/javascript"></script>
     </body>
 </html>

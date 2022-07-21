@@ -6,9 +6,6 @@ var datosPraetorians = '/usuarios/praetorians3'
 var datosKraken = '/usuarios/kraken3'
 
 const dataGuilds = '/api/guilds'
-import {Guild} from '../models/Guild.js'
-let a = new Guild()
-console.log(a)
 
 class Usuario{
     constructor(posicion, avatar, nombre, puntos, batallas, id, avance24){
