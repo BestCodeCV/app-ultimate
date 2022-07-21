@@ -1,7 +1,7 @@
 //const modalAlumno = new bootstrap.Modal(document.getElementById('modalAlumno'))
-const url = 'http://localhost:3000/bcg/byob';
-const urlByob = 'http://localhost:3000/nbcg/byob';
-const urlKraken = 'http://localhost:3000/nbcg/kraken';
+const url = '/bcg/byob';
+const urlByob = '/nbcg/byob';
+const urlKraken = '/nbcg/kraken';
 const botons = document.querySelectorAll(".name")
 const cuando = function(evento){
     detailSector(this.innerText)
