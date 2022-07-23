@@ -1,12 +1,11 @@
 //const modalAlumno = new bootstrap.Modal(document.getElementById('modalAlumno'))
-import {createGood} from '../scripts/goodsDB.js'
+import {createGood, createBuilding} from '../scripts/goodsDB.js'
 const url = '/bcg/byob';
 const urlByob = '/nbcg/byob';
 const urlKraken = '/nbcg/kraken';
 const botons = document.querySelectorAll(".name")
 const cuando = function(evento){
     detailSector(this.innerText)
-    console.log("El texto es", this.innerText)
 }
 botons.forEach(boton=>{
     boton.addEventListener("click", cuando)
@@ -56,12 +55,17 @@ function bienes(sector){
     modalAlumno.show();
 }
 function addCard(building){
+    let fakeBuilding = createBuilding(building.name)
     let h = ``
     h+=`<div class="card border-secondary mb-3" >`
-    h+=`                 <div class="card-header">${building.name}</div>`
+    h+=`                 <div class="card-header"><div class="row"><div class="col col-4 m-0 p-0"></div> <div class="col col-4 m-0 p-0"><img src="${fakeBuilding.url}" class="w-100"></div> ${fakeBuilding.es}</div></div>`
     h+=`                 <ul class="list-group list-group-flush">`
     for(let good in building.goods){
-        h+=`                   <li class="list-group-item bg-success text-white">`
+        if(building.goods[good].status==0){
+            h+=`                   <li class="list-group-item bg-danger text-white">`
+        }else{
+            h+=`                   <li class="list-group-item bg-success text-white">`
+        }
         h+=`                      <div class="row">`
         h+=`                           <div class="col col-1 m-0 p-0"><img src="${building.goods[good].url}" class="w-100"></div>`
         h+=`                           <div class="col col-5">${building.goods[good].es_name}</div>`
@@ -94,8 +98,6 @@ function showData(url){
         dataGuild = data.sectors
         dataTesore = data.tesore
 
-        console.log("sectors: " , dataGuild)
-
         for(let i in dataTesore){
             if(dataTesore[i].requestMethod == "getTreasury" && dataTesore[i].responseData.__class__== "Resources"){
                 tesore = dataTesore[i].responseData.resources
@@ -106,14 +108,11 @@ function showData(url){
             }
         }
 
-        console.log(listGoods)
-
         for(let i in dataGuild){
             for(let j in dataGuild[i]){
                 if(dataGuild[i][j].requestMethod == "getBuildings" && dataGuild[i][j].responseData.__class__== "GuildBattlegroundProvinceBuildings"){
                     let sector = new Sector()
                     sector.name = i
-                    console.log("Nombre " + sector.name)
                     let buildings = []
                     
                     for(let k in dataGuild[i][j].responseData.availableBuildings){
@@ -161,7 +160,6 @@ function showData(url){
         //}
         //$('#cardBuildings').html(msj)
         detailSector("X1X")
-        console.log(sectors)
         //console.log(bienesTesore)
 
         //console.log(tesore)
@@ -170,6 +168,13 @@ function showData(url){
 function detailSector(name){
     let sec = searchSector(name)
     let msj = ``
+    
+
+    let h = ``
+    h+=`<div class="card border-secondary mb-3" >`
+    h+=`                 <div class="card-header">Nombre del sector: ${sec.name}</div>`
+    h+=`           </div>`
+    $('#sectorsDetails').html(h)
     for(let b in sec.buildings){
         msj += addCard(sec.buildings[b])
     }

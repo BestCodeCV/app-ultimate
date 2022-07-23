@@ -27,6 +27,13 @@ class fakeGood{
         this.age = age
     }
 }
+class fakeBuilding{
+    constructor(en, es, url){
+        this.en = en 
+        this.es = es
+        this.url = url
+    }
+}
 let goods = [
     new fakeGood(bienesHierro[0], "Tela", "Edad de Hierro", "https://en.wiki.forgeofempires.com/images/thumb/c/c4/Fine_cloth.png/45px-Fine_cloth.png"),
     new fakeGood(bienesHierro[1], "Ébano", "Edad de Hierro", "https://en.wiki.forgeofempires.com/images/thumb/0/09/Fine_ebony.png/45px-Fine_ebony.png"),
@@ -98,36 +105,54 @@ let goods = [
     new fakeGood(bienesOceanico[2], "Perlas","Oceánico",  "https://en.wiki.forgeofempires.com/images/thumb/d/dc/Fine_pearls.png/45px-Fine_pearls.png"),
     new fakeGood(bienesOceanico[3], "Coral","Oceánico",  "https://en.wiki.forgeofempires.com/images/thumb/e/e2/Fine_corals.png/45px-Fine_corals.png"),
     new fakeGood(bienesOceanico[4], "Plancton","Oceánico",  "https://en.wiki.forgeofempires.com/images/thumb/1/15/Fine_plankton.png/45px-Fine_plankton.png"),
-    new fakeGood(bienesVirtual[0], "Criptomonedas","F. Virtual",  "https://static.wikia.nocookie.net/forgeofempires/images/a/a5/Cryptocash.png/revision/latest/scale-to-width-down/20?cb=20180506075013"),
-    new fakeGood(bienesVirtual[1], "Sedas de Tè","F. Virtual",  "https://static.wikia.nocookie.net/forgeofempires/images/9/9e/Tea_Silk.png/revision/latest/scale-to-width-down/20?cb=20180506075223"),
-    new fakeGood(bienesVirtual[2], "Arroz de oro", "F. Virtual", "https://static.wikia.nocookie.net/forgeofempires/images/d/d1/Golden_Rice.png/revision/latest/scale-to-width-down/20?cb=20180506075016"),
-    new fakeGood(bienesVirtual[3], "Cristales de Datos","F. Virtual",  "https://static.wikia.nocookie.net/forgeofempires/images/2/2e/Data_Crystals.png/revision/latest/scale-to-width-down/20?cb=20180506075015"),
-    new fakeGood(bienesVirtual[4], "Nanites","F. Virtual",  "https://static.wikia.nocookie.net/forgeofempires/images/a/a8/Nanites.png/revision/latest/scale-to-width-down/20?cb=20180516111101"),
-    new fakeGood(bienesMarte[0],"Lubricantes", "Marte",  "https://static.wikia.nocookie.net/forgeofempires/images/7/77/Lubricant.png/revision/latest/scale-to-width-down/20?cb=20190424110717"),
-    new fakeGood(bienesMarte[1], "Cultivos de biotecnologìa","Marte",  "https://static.wikia.nocookie.net/forgeofempires/images/e/ef/BioTech_Crops.png/revision/latest/scale-to-width-down/20?cb=20190424110716"),
-    new fakeGood(bienesMarte[2], "Superaleaciones", "Marte", "https://static.wikia.nocookie.net/forgeofempires/images/b/bc/Superalloys.png/revision/latest/scale-to-width-down/20?cb=20190424110718"),
-    new fakeGood(bienesMarte[3], "Microbios de Marte","Marte",  "https://static.wikia.nocookie.net/forgeofempires/images/4/40/Mars_Microbes.png/revision/latest/scale-to-width-down/20?cb=20190424110717"),
-    new fakeGood(bienesMarte[4], "Energìa de fusiòn","Marte",  "https://static.wikia.nocookie.net/forgeofempires/images/6/61/Fusion_Power.png/revision/latest/scale-to-width-down/20?cb=20190424110716"),
-    new fakeGood(bienesAsteroides[0], "Niquel","Asteroides",  "https://static.wikia.nocookie.net/forgeofempires/images/0/00/Nickel.png/revision/latest/scale-to-width-down/20?cb=20200320083027"),
-    new fakeGood(bienesAsteroides[1], "Mat. procesados", "Asteroides", "https://static.wikia.nocookie.net/forgeofempires/images/8/83/Processed_Materials.png/revision/latest/scale-to-width-down/20?cb=20200320083028"),
-    new fakeGood(bienesAsteroides[2], "Fluidos Compuestos", "Asteroides", "https://static.wikia.nocookie.net/forgeofempires/images/c/c7/Compound_Fluid.png/revision/latest/scale-to-width-down/20?cb=20200320083027"),
-    new fakeGood(bienesAsteroides[3], "Bromo","Asteroides",  "https://static.wikia.nocookie.net/forgeofempires/images/a/ad/Bromine.png/revision/latest/scale-to-width-down/20?cb=20200320083026"),
-    new fakeGood(bienesAsteroides[4], "Cristales de Platino","Asteroides",  "https://static.wikia.nocookie.net/forgeofempires/images/4/49/Platinum_Crystals.png/revision/latest/scale-to-width-down/20?cb=20200320083028"),
-    new fakeGood(bienesVenus[0], "Suplementos microverdes","Venus",  "https://static.wikia.nocookie.net/forgeofempires/images/9/92/Microgreen_Supplement.png/revision/latest/scale-to-width-down/20?cb=20210306150914"),
-    new fakeGood(bienesVenus[1], "Algas brillantes","Venus",  "https://static.wikia.nocookie.net/forgeofempires/images/b/b7/Glowing_Seaweed.png/revision/latest/scale-to-width-down/20?cb=20210306150842"),
-    new fakeGood(bienesVenus[2], "Aperitivos de hierba","Venus",  "https://static.wikia.nocookie.net/forgeofempires/images/c/c8/Herbal_Snack.png/revision/latest/scale-to-width-down/20?cb=20210306150850"),
-    new fakeGood(bienesVenus[3], "Cristales de azùcar", "Venus", "https://static.wikia.nocookie.net/forgeofempires/images/d/d3/Sugar_Crystals.png/revision/latest/scale-to-width-down/20?cb=20210306151005"),
-    new fakeGood(bienesVenus[4], "Proteinas de soya", "Venus", "https://static.wikia.nocookie.net/forgeofempires/images/8/86/Soy_Proteins.png/revision/latest/scale-to-width-down/20?cb=20210306150954"),
-    new fakeGood(bienesJupiter[0],  "Inf. de ADN avanzada","Júpiter", "https://static.wikia.nocookie.net/forgeofempires/images/4/46/Advanced_DNA_Data.png/revision/latest/scale-to-width-down/20?cb=20220307201005"),
-    new fakeGood(bienesJupiter[1], "Criaturas biològicas", "Júpiter", "https://static.wikia.nocookie.net/forgeofempires/images/9/95/Bio_Creatures.png/revision/latest/scale-to-width-down/20?cb=20220307201004"),
-    new fakeGood(bienesJupiter[2], "Poriferas mejoradas","Júpiter",  "https://static.wikia.nocookie.net/forgeofempires/images/b/b7/Enhanced_Porifera.png/revision/latest/scale-to-width-down/20?cb=20220307201003"),
-    new fakeGood(bienesJupiter[3], "Algas rojas","Júpiter",  "https://static.wikia.nocookie.net/forgeofempires/images/3/36/Red_Algae.png/revision/latest/scale-to-width-down/20?cb=20220307201002"),
-    new fakeGood(bienesJupiter[4], "Registros topològicos", "Júpiter",  "https://static.wikia.nocookie.net/forgeofempires/images/3/38/Topological_Records.png/revision/latest/scale-to-width-down/20?cb=20220307201001")
+    new fakeGood(bienesVirtual[0], "Criptomonedas","F. Virtual",  "https://foees.innogamescdn.com/assets/shared/icons/cryptocash-c3051dbfb.png"),
+    new fakeGood(bienesVirtual[1], "Sedas de Tè","F. Virtual",  "https://foees.innogamescdn.com/assets/shared/icons/tea_silk-9f8516154.png"),
+    new fakeGood(bienesVirtual[2], "Arroz de oro", "F. Virtual", "https://foees.innogamescdn.com/assets/shared/icons/golden_rice-05615e75b.png"),
+    new fakeGood(bienesVirtual[3], "Cristales de Datos","F. Virtual",  "https://foees.innogamescdn.com/assets/shared/icons/data_crystals-810332bc5.png"),
+    new fakeGood(bienesVirtual[4], "Nanites","F. Virtual",  "https://foees.innogamescdn.com/assets/shared/icons/nanites-e97de4a36.png"),
+    new fakeGood(bienesMarte[0],"Lubricantes", "Marte",  "https://foees.innogamescdn.com/assets/shared/icons/lubricants-ac936623e.png"),
+    new fakeGood(bienesMarte[1], "Cultivos de biotecnologìa","Marte",  "https://foees.innogamescdn.com/assets/shared/icons/biotech_crops-4b6776899.png"),
+    new fakeGood(bienesMarte[2], "Superaleaciones", "Marte", "https://foees.innogamescdn.com/assets/shared/icons/superalloys-ba3ac5ae1.png"),
+    new fakeGood(bienesMarte[3], "Microbios de Marte","Marte",  "https://foees.innogamescdn.com/assets/shared/icons/mars_microbes-d8d2ab899.png"),
+    new fakeGood(bienesMarte[4], "Energìa de fusiòn","Marte",  "https://foees.innogamescdn.com/assets/shared/icons/fusion_reactors-36cfeaee4.png"),
+    new fakeGood(bienesAsteroides[0], "Niquel","Asteroides",  "https://es.wiki.forgeofempires.com/images/0/00/Nickel.png"),
+    new fakeGood(bienesAsteroides[1], "Mat. procesados", "Asteroides", "https://es.wiki.forgeofempires.com/images/8/83/Processed_Materials.png"),
+    new fakeGood(bienesAsteroides[2], "Fluidos Compuestos", "Asteroides", "https://es.wiki.forgeofempires.com/images/c/c7/Compound_Fluid.png"),
+    new fakeGood(bienesAsteroides[3], "Bromo","Asteroides",  "https://es.wiki.forgeofempires.com/images/a/ad/Bromine.png"),
+    new fakeGood(bienesAsteroides[4], "Cristales de Platino","Asteroides",  "https://es.wiki.forgeofempires.com/images/4/49/Platinum_Crystals.png"),
+    new fakeGood(bienesVenus[0], "Suplementos microverdes","Venus",  "https://es.wiki.forgeofempires.com/images/thumb/9/92/Microgreen_Supplement.png/45px-Microgreen_Supplement.png"),
+    new fakeGood(bienesVenus[1], "Algas brillantes","Venus",  "https://es.wiki.forgeofempires.com/images/thumb/b/b7/Glowing_Seaweed.png/45px-Glowing_Seaweed.png"),
+    new fakeGood(bienesVenus[2], "Aperitivos de hierba","Venus",  "https://es.wiki.forgeofempires.com/images/thumb/c/c8/Herbal_Snack.png/45px-Herbal_Snack.png"),
+    new fakeGood(bienesVenus[3], "Cristales de azùcar", "Venus", "https://es.wiki.forgeofempires.com/images/thumb/d/d3/Sugar_Crystals.png/45px-Sugar_Crystals.png"),
+    new fakeGood(bienesVenus[4], "Proteinas de soya", "Venus", "https://es.wiki.forgeofempires.com/images/thumb/8/86/Soy_Proteins.png/45px-Soy_Proteins.png"),
+    new fakeGood(bienesJupiter[0],  "Inf. de ADN avanzada","Júpiter", "../imgs/adn.webp"),
+    new fakeGood(bienesJupiter[1], "Criaturas biològicas", "Júpiter", "../imgs/criaturas.webp"),
+    new fakeGood(bienesJupiter[2], "Poriferas mejoradas","Júpiter",  "../imgs/poriferas.webp"),
+    new fakeGood(bienesJupiter[3], "Algas rojas","Júpiter",  "../imgs/algas_rojas.webp"),
+    new fakeGood(bienesJupiter[4], "Registros topològicos", "Júpiter",  "../imgs/topologicas.webp")
+]
+let buildings = [
+    new fakeBuilding("outpost", "Puesto de avanzada", "https://foeen.innogamescdn.com/assets/guild_battlegrounds/hud/guild_battlegrounds_sector_buildings_outpost.png"),
+    new fakeBuilding("fortress", "Fortaleza", "https://foeen.innogamescdn.com/assets/guild_battlegrounds/hud/guild_battlegrounds_sector_buildings_fortress.png"),
+    new fakeBuilding("decoys", "Señuelos", "https://foeen.innogamescdn.com/assets/guild_battlegrounds/hud/guild_battlegrounds_sector_buildings_decoys.png"),
+    new fakeBuilding("traps", "Trampas", "https://foeen.innogamescdn.com/assets/guild_battlegrounds/hud/guild_battlegrounds_sector_buildings_traps.png"),
+    new fakeBuilding("watchtower", "Torre de vigilancia", "https://foeen.innogamescdn.com/assets/guild_battlegrounds/hud/guild_battlegrounds_sector_buildings_watchtower.png"),
+    new fakeBuilding("siege_camp", "Campo de Asedio", "https://foeen.innogamescdn.com/assets/guild_battlegrounds/hud/guild_battlegrounds_sector_buildings_siege_camp.png"),
+    new fakeBuilding("banner", "Estandarte", "https://foeen.innogamescdn.com/assets/guild_battlegrounds/hud/guild_battlegrounds_sector_buildings_banner.png"),
+    new fakeBuilding("statue", "Estatua", "https://foeen.innogamescdn.com/assets/guild_battlegrounds/hud/guild_battlegrounds_sector_buildings_statue.png"),
+    new fakeBuilding("palace", "Palacio", "https://foeen.innogamescdn.com/assets/guild_battlegrounds/hud/guild_battlegrounds_sector_buildings_palace.png"),
 ]
 function getFakeGood(name){
     for(let g in goods){
         if(goods[g].en == name){
             return goods[g]
+        }
+    }
+}
+function getFakeBuilding(name){
+    for(let g in buildings){
+        if(buildings[g].en == name){
+            return buildings[g]
         }
     }
 }
@@ -144,4 +169,7 @@ function createGood(name, quantity, show, status){
     bien.url = fake.url
     return bien
 }
-export {createGood}
+function createBuilding(name){
+    return getFakeBuilding(name)
+}
+export {createGood, createBuilding}
