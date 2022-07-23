@@ -1,4 +1,5 @@
 //const modalAlumno = new bootstrap.Modal(document.getElementById('modalAlumno'))
+import {createGood} from '../scripts/goodsDB.js'
 const url = '/bcg/byob';
 const urlByob = '/nbcg/byob';
 const urlKraken = '/nbcg/kraken';
@@ -59,10 +60,11 @@ function addCard(building){
     h+=`<div class="card border-secondary mb-3" >`
     h+=`                 <div class="card-header">${building.name}</div>`
     h+=`                 <ul class="list-group list-group-flush">`
-    for(good in building.goods){
+    for(let good in building.goods){
         h+=`                   <li class="list-group-item bg-success text-white">`
         h+=`                      <div class="row">`
-        h+=`                           <div class="col col-6">${building.goods[good].name}</div>`
+        h+=`                           <div class="col col-1 m-0 p-0"><img src="${building.goods[good].url}" class="w-100"></div>`
+        h+=`                           <div class="col col-5">${building.goods[good].es_name}</div>`
         h+=`                            <div class="col col-6">${building.goods[good].show}</div>`
         h+=`                       </div>`
         h+=`                  </li>`
@@ -94,7 +96,7 @@ function showData(url){
 
         console.log("sectors: " , dataGuild)
 
-        for(i in dataTesore){
+        for(let i in dataTesore){
             if(dataTesore[i].requestMethod == "getTreasury" && dataTesore[i].responseData.__class__== "Resources"){
                 tesore = dataTesore[i].responseData.resources
                 for(var t in tesore){
@@ -106,25 +108,25 @@ function showData(url){
 
         console.log(listGoods)
 
-        for(i in dataGuild){
-            for(j in dataGuild[i]){
+        for(let i in dataGuild){
+            for(let j in dataGuild[i]){
                 if(dataGuild[i][j].requestMethod == "getBuildings" && dataGuild[i][j].responseData.__class__== "GuildBattlegroundProvinceBuildings"){
                     let sector = new Sector()
                     sector.name = i
                     console.log("Nombre " + sector.name)
                     let buildings = []
-
-                    for(k in dataGuild[i][j].responseData.availableBuildings){
-                        building = new Building()
+                    
+                    for(let k in dataGuild[i][j].responseData.availableBuildings){
+                        let building = new Building()
                         building.name = dataGuild[i][j].responseData.availableBuildings[k].buildingId
                         let g = []
-                        for(m in dataGuild[i][j].responseData.availableBuildings[k].costs.resources){
+                        for(let m in dataGuild[i][j].responseData.availableBuildings[k].costs.resources){
                             let txName = m
                             let txQuantity = dataGuild[i][j].responseData.availableBuildings[k].costs.resources[m]
                             let txShow = ""
                             let txStatus = 0
 
-                            for(x in listGoods){
+                            for(let x in listGoods){
                                 if(listGoods[x].name == txName){
                                     if(txQuantity<listGoods[x].quantity){
                                         if(listGoods[x].quantity*2>=txQuantity){
@@ -140,7 +142,8 @@ function showData(url){
                                     }
                                 }
                             }
-                            let bien = new Good(txName, txQuantity, txShow, txStatus)
+                            let bien = createGood(txName, txQuantity, txShow, txStatus)
+                            //let bien = new Good(txName, txQuantity, txShow, txStatus)
                             g.push(bien)
                         }
                         building.goods = g
@@ -173,7 +176,7 @@ function detailSector(name){
     $('#cardBuildings').html(msj)
 }
 function searchSector(name){
-    for(miSector in sectors){
+    for(let miSector in sectors){
         if(sectors[miSector].name == name){
             return sectors[miSector]
         }
@@ -210,15 +213,15 @@ let cantidades = [0,0,0,0,0,0,0,0,0,0]
 let contadores1 = [0,0,0,0,0,0,0,0,0,0]
 let cantidades1 = [0,0,0,0,0,0,0,0,0,0]
 let eras = ["Colonial", "Postmoderna", "Contempóranea", "Mañana", "Futuro", "Ártico", "Océanico", "Virtual", "Marte", "Espacial"]
-for(i in data){
+for(let i in data){
     //console.log(data[i].nombre)
     total = 0
     contadores1 = [0,0,0,0,0,0,0,0,0,0]
     cantidades1 = [0,0,0,0,0,0,0,0,0,0]
-    for(j in data[i].edificios){
-        for(k in data[i].edificios[j].bienes){
+    for(let j in data[i].edificios){
+        for(let k in data[i].edificios[j].bienes){
             total+=data[i].edificios[j].bienes[k]
-            for(m in bienes){
+            for(let m in bienes){
                 let a = bienes[m].find(x=>x==k)
                 if(a!=null || typeof a !='undefined'){
                     contadores1[m]+=1
@@ -229,14 +232,14 @@ for(i in data){
             }
         }
     }
-    for(y in contadores1){
+    for(let y in contadores1){
         //console.log("Era: " + eras[y] + " => "+cantidades1[y])
     }
     //console.log("")
 }
 //console.log("Total de bienes por sector: "+ total+"\n")
 //console.log("RESUMEN: ")
-for(i in contadores){
+for(let i in contadores){
     //console.log("Era: " + eras[i] + " => " + cantidades[i])
     //console.log("Número de solicitudes: "+contadores[i])
     //console.log("")

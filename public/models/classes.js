@@ -39,11 +39,15 @@ class Member{
     }
 }
 class Good{
-    constructor(name, quantity, show, status){
+    constructor(name, quantity, show, status, es_name, en_name, url, age){
         this.name = name
         this.quantity = quantity
         this.show = show
         this.status = status
+        this.es_name = es_name
+        this.en_name = en_name
+        this.url = url
+        this.age = age
     }
 }
 class Sector{
@@ -58,4 +62,12 @@ class Building{
         this.goods = goods;
     }
 }
-export {DataGuild, Guild, Member, Good, Sector, Building}
+class GoodDetail {
+    constructor(es_name, en_name, url, age){
+        this.es_name = es_name
+        this.en_name = en_name
+        this.url = url
+        this.age = age
+    }
+}
+export {DataGuild, Guild, Member, Good, Sector, Building, GoodDetail}
