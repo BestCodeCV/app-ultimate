@@ -122,10 +122,11 @@ function detailHTML(members){
     let x = ``
     for(let m in members){
         x+=`   <div class="row">`
-        x+=`         <div class="col col-2 single-line mt-1">${members[m].date}</div>`
-        x+=`         <div class="col col-3 single-line mt-1">${members[m].battles}</div>`
-        x+=`         <div class="col col-4 single-line mt-1">${members[m].points}</div>`
+        x+=`         <div class="col col-3 single-line mt-1">${members[m].date}</div>`
+        x+=`         <div class="col col-1 single-line mt-1">${members[m].battles}</div>`
+        x+=`         <div class="col col-3 single-line mt-1">${members[m].points}</div>`
         x+=`         <div class="col col-3 single-line mt-1">${members[m].age}</div>`
+        x+=`         <div class="col col-2 single-line mt-1">${members[m].clan}</div>`
         x+=`     </div>`
     }
     return x

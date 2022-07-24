@@ -23,7 +23,7 @@ class Guild{
     }
 }
 class Member{
-    constructor(id, name, points, battles, age, city_name, clan_id, profile_text, forge_db, rank, active, date){
+    constructor(id, name, points, battles, age, city_name, clan_id, profile_text, forge_db, rank, active, date, clan){
         this.id = id
         this.name = name
         this.points = points
@@ -36,6 +36,7 @@ class Member{
         this.rank = rank
         this.active = active
         this.date = date
+        this.clan = clan
     }
 }
 class Good{

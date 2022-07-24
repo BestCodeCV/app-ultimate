@@ -63,6 +63,7 @@ function loadData(url){
                             member.forge_db = forge + x.player_id
                             member.rank = x.rank
                             member.date = j
+                            member.clan = x.clan.name
                             if(x.is_active==true) member.active = x.is_active
                             else member.active = false
                             members.push(member)
@@ -92,11 +93,7 @@ function loadData(url){
             $('#btn002').html("Desde el " + database[0].guilds[1].date)
             $('#btn003').html("Desde el " + database[0].guilds[datos-1].date)
         }
-
-        console.log("datos: ", database[0].guilds.length)
-        console.log(database[0].guilds[0].date)
         showData(0)
-
     });  
 }
 
@@ -108,8 +105,6 @@ function showData(guild){
         if(this.id!=null && this.id!='undefined' && this.id!=''){
             let id = this.id.slice(4)
             let clan = $(this).attr('clan').slice(4)
-            console.log("El id es: ", id)
-            console.log("El clan es: ", clan)
             detailMember(id, clan)
         }
     }
@@ -119,8 +114,6 @@ function showData(guild){
 }
 function showDataHistorial(guild, origen){
     let size = database[guild].guilds.length
-    console.log("size ", size)
-    console.log("origen ", origen)
     if(origen == ULTIME_DAY){
         if(size==1){
             showData(guild)
@@ -146,9 +139,7 @@ function detailMember(id, clan){
     }).done((data)=>{
         if(data.status == 200){
             $(location).attr('href', '/userid='+data.id)
-            console.log("Good")
         }else if(data.status == 500){
-            console.log("Bad")
         }
     })
 }

@@ -48,6 +48,7 @@ function loadData(){
                                     member.forge_db = forge + x.player_id
                                     member.rank = x.rank
                                     member.date = j
+                                    member.clan = x.clan.name
                                     if(x.is_active==true) member.active = x.is_active
                                     else member.active = false
                                     members.push(member)

@@ -58,7 +58,7 @@ function addCard(building){
     let fakeBuilding = createBuilding(building.name)
     let h = ``
     h+=`<div class="card border-secondary mb-3" >`
-    h+=`                 <div class="card-header"><div class="row"><div class="col col-4 m-0 p-0"></div> <div class="col col-4 m-0 p-0"><img src="${fakeBuilding.url}" class="w-100"></div> ${fakeBuilding.es}</div></div>`
+    h+=`                 <div class="card-header"><div class="row"> <div class="col col-4 m-0 p-0"><img src="${fakeBuilding.url}" class="w-100"></div> ${fakeBuilding.es}</div></div>`
     h+=`                 <ul class="list-group list-group-flush">`
     for(let good in building.goods){
         if(building.goods[good].status==0){
