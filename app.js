@@ -65,6 +65,9 @@ app.get('/bcg-07-21', (req, res)=>{
 app.get('/', (req, res)=>{
     res.sendFile(__dirname +'/public/views/home.html')
 })
+app.get('/data', (req, res)=>{
+    res.sendFile(__dirname +'/public/views/data-members.html')
+})
 app.get('/bcg', (req, res)=>{
     res.sendFile(__dirname +'/public/views/bdg.html')
 })

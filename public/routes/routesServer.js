@@ -8,6 +8,13 @@ module.exports = app =>{
             "msg": "Ningún dato encontrado"
         })
     })
+    app.get('/api/members', (req, res)=>{
+        const data = require("../jsons/members.json");
+        if(data!=null) res.status(200).json(data)
+        else res.status(500).json({
+            "msg": "Ningún dato encontrado"
+        })
+    })
     app.get('/nbcg/byob', (req, res)=>{
         const data = require("../js/bcg-byob.json");
         if(data!=null) res.status(200).json(data)
