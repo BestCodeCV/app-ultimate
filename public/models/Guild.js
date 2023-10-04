@@ -1,12 +1,14 @@
-class Guild{
-    constructor(id, description, members, name, quantity, show, status){
-        this.name = name
-        this.quantity = quantity
-        this.show = show
-        this.status = status
+export class Guild {
+    constructor(info, members) {
+        this.description = info.description || '';
+        this.membersNum = info.membersNum || 0;
+        this.name = info.name || '';
+        this.rank = info.rank || '';
+        this.level = info.level || 0;
+        this.id = info.id || '';
+        this.members = members || [];
     }
     getName(){
-        console.log("HOla mundo nuevo")
+        console.log("Hola perro")
     }
 }
-export { Guild };
