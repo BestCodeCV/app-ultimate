@@ -1,5 +1,5 @@
 class Guild{
-    constructor(id, description, members, ){
+    constructor(id, description, members, name, quantity, show, status){
         this.name = name
         this.quantity = quantity
         this.show = show
