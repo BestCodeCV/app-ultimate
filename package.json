@@ -1,7 +1,6 @@
 {
   "name": "appserver",
   "version": "1.0.0",
-  "type": "module",
   "description": "Server with mysql",
   "main": "index.js",
   "scripts": {
