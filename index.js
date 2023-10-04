@@ -1,12 +1,13 @@
-const express = require('express')
-const app = express()
-const morgan = require('morgan')
-const bodyParser = require('body-parser')
-const port = process.env.PORT || 3000
-const path = require('path')
-const fs = require('fs')
-const gm = require('gm')
-const fileUpload = require('express-fileupload')
+import express from 'express';
+const app = express();
+import morgan from 'morgan';
+import bodyParser from 'body-parser';
+const port = process.env.PORT || 3000;
+import path from 'path';
+import fs from 'fs';
+import gm from 'gm';
+import fileUpload from 'express-fileupload';
+
 // settings 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'))
