@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 class Guild {
+=======
+export class Guild {
+>>>>>>> 80a455c60d852ff0661d0f9d066940658ab71dd2
     constructor(info, members) {
         this.description = info.description || '';
         this.membersNum = info.membersNum || 0;
@@ -12,4 +16,7 @@ class Guild {
         console.log("Hola perro")
     }
 }
+<<<<<<< HEAD
 exports.Guild = Guild;
+=======
+>>>>>>> 80a455c60d852ff0661d0f9d066940658ab71dd2
