@@ -1,4 +1,4 @@
-class Guild {
+export class Guild {
     constructor(info, members) {
         this.description = info.description || '';
         this.membersNum = info.membersNum || 0;
@@ -12,4 +12,3 @@ class Guild {
         console.log("Hola perro")
     }
 }
-exports.Guild = Guild;
