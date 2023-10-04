@@ -1,4 +1,5 @@
-import {DataGuild, Guild, Member, Good, Building, Sector} from '../models/classes.js'
+//import {DataGuild, Guild, Member, Good, Building, Sector} from '../models/classes.js'
+const { DataGuild, Guild, Member, Good, Building, Sector } = require('../models/classes.js');
 import {bienesArca, bienesMirador, bienesObs} from '../scripts/Util.js'
 import {membersHTML, guildHTML, historialHTML} from '../scripts/serviceHTML.js'
 
