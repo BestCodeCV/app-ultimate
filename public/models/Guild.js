@@ -1,4 +1,4 @@
-export class Guild{
+class Guild{
     constructor(id, description, members, ){
         this.name = name
         this.quantity = quantity
@@ -9,3 +9,4 @@ export class Guild{
         console.log("HOla mundo nuevo")
     }
 }
+export { Guild };
