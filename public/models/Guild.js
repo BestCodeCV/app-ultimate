@@ -1,4 +1,4 @@
-export class Guild {
+class Guild {
     constructor(info, members) {
         this.description = info.description || '';
         this.membersNum = info.membersNum || 0;
@@ -12,3 +12,4 @@ export class Guild {
         console.log("Hola perro")
     }
 }
+module.exports = Guild;
