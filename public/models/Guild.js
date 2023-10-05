@@ -1,4 +1,4 @@
-import "../../addRequire.js";
+
 class Guild {
     constructor(info, members) {
         this.description = info.description || '';
