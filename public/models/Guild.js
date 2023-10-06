@@ -1,4 +1,3 @@
-
 class Guild {
     constructor(info, members) {
         this.description = info.description || '';
